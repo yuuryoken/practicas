@@ -1,6 +1,12 @@
 print "esto es una prueva de string"
 print "hola escribir tu nombre:"
 h= raw_input()
-print "cuantas letras tiene tu nombre:"
-t= int(input())
+t= len(h)
+for i in range(t):
+	print "la  letra numero %d de tu nombre es" %i
+	prim1= raw_input()
+	if prim1== h[i]:
+		print "bien hecho"
+	else:
+		print "fallaste"
 
